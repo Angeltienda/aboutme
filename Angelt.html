@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+  <title>Angel Tienda</title>
+  <style>
+  body {
+    background: url("http://isitaccessible.com/wp-content/uploads/2014/10/Road-To-City.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-opacity: 1;
+    text-align: center;
+    }
+    h1 {
+      font-size: 60px;
+      padding: 40;
+    }
+      div {
+        width: 100%;
+        padding: 15px;
+        margin: absolute;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 25px;
+      }
+p {
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  height: 30px;
+  transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+ </style>
+ </head>
+ <body>
+<header>
+  <h1>Angel Tienda</h1>
+</header>
+ <div class="Education">
+  <p>Education<br />
+  <small>I am graduating from Milby High School on May of 2015. I have pursued, considered, and taken courses on multiple career paths while in high school such as, engineering, health, culinary, and now web development and finance. Although I have fallen behind on my academic performance while in high school, I plan to develop a stronger discipline for my work ethic through the military, which will also allow me to attend school through them in intensive training. </small></p>
+</div>
+
+<div class="Work Experience">
+  <p>Work Experience<br />
+  <small>I have worked in various places</small></p>
+</div>
+ <div class="My Life">
+      <p> My Life <br />
+      <small></small></p>
+  </div>
+  <div class="My Mission">
+      <p>My Mission<br />
+      <small></small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
